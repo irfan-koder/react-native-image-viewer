@@ -549,7 +549,7 @@ export default class ImageViewer extends React.Component<Props, State> {
             }
             image.props.source = {
               uri: image.url,
-              type: image.type,
+              type: image?.type,
               ...image.props.source
             };
           }
